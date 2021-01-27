@@ -28,5 +28,7 @@
       "passwordField": "password"
     }
   },
-  "mongodb": "mongodb+srv://anikate12:anikate123@cluster0-py51n.mongodb.net/test?retryWrites=true&w=majority"
+  "mongodb": "mongodb+srv://anikate12:anikate123@cluster0-py51n.mongodb.net/test?retryWrites=true&w=majority",
+  "useNewUrlParser": true,
+  "useUnifiedTopology": true
 }

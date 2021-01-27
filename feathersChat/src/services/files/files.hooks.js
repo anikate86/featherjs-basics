@@ -1,13 +1,13 @@
 
 
-const concatenateData = require('../../hooks/concatenate-data');
+const uploadFilesToGcs = require('../../hooks/upload-files-to-gcs');
 
 module.exports = {
   before: {
     all: [],
     find: [],
     get: [],
-    create: [],
+    // create: [uploadFilesToGcs()],
     update: [],
     patch: [],
     remove: []
@@ -16,7 +16,7 @@ module.exports = {
   after: {
     all: [],
     find: [],
-    get: [concatenateData()],
+    get: [],
     create: [],
     update: [],
     patch: [],

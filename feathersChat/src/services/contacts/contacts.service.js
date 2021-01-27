@@ -9,6 +9,8 @@ module.exports = function (app) {
     paginate: app.get('paginate')
   };
 
+  const multer = require('multer')
+  const multipartMiddleware = multer()
   // Initialize our service with any options it requires
   app.use('/contacts', new Contacts(options, app));
 
